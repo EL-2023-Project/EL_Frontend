@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainBG"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_main"
+    tools:context="graduation.project.dongyang.el.ibda.activity.MainActivity">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/el_logo_png"
+            android:layout_margin="50dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이용 방법을 선택하세요."
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <!-- 버튼 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="30dp">
+        <LinearLayout
+            android:id="@+id/btnMember"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/button_round_white">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/Transparency"
+                android:src="@drawable/ic_baseline_supervisor_account_50_blue"
+                android:text="@string/member"
+                android:gravity="center"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/member"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="@color/blue_main"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnNotMember"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/button_round_white">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/Transparency"
+                android:src="@drawable/ic_baseline_person_outline_50_blue"
+                android:text="@string/member"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nonMember"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="@color/blue_main"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnQR"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_ripple_white"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/Notice_QR_login"
+            android:drawableLeft="@drawable/ic_baseline_qr_code_24_blue" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_ripple_white"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="회원 가입 방법"
+            android:drawableLeft="@drawable/ic_baseline_person_add_alt_1_24_blue" />
+    </LinearLayout>
+
+</LinearLayout>
